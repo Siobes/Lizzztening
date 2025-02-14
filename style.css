@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+#app {
+    text-align: center;
+    width: 100%;
+    max-width: 600px; /* Maximum width for phone screens */
+}
+
+.menu {
+    display: none;  /* Hide the menu by default */
+}
+
+#splash {
+    display: block; /* Show splash screen initially */
+    text-align: center;
+}
+
+button {
+    background-color: #5a2d82; /* Dark Violet */
+    border: 2px solid #1a145e; /* Blue Border */
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 10px;
+    width: 90%;  /* Button width adjusted for mobile */
+    max-width: 300px;  /* Max width for button */
+    border-radius: 25px;
+    display: flex;  /* Flexbox to align content */
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#playerOption {
+    margin-bottom: 18rem;  /* Space between the buttons (approx 3 inches) */
+}
+
+#playerOption,
+#sleepOption {
+    margin: 0.5in 0; /* Adds 1 inch space between the buttons (0.5in top and bottom margin) */
+    background-color: #5a2d82;
+    border: 2px solid #1a145e;
+    color: white;
+    padding: 40px 80px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 25px;
+    width: 90%;
+    max-width: 300px;
+}
+
+#mainMenu button {
+    margin: 0.5in 0; /* Adjust margin to 1 inch between buttons */
+}
+
+
+button img {
+    width: 40px;  /* Increase image size */
+    height: 40px; /* Maintain aspect ratio */
+    margin-right: 15px;  /* Add space between image and text */
+}
+
+button:hover {
+    background-color: #4a2171; /* Slightly darker violet */
+}
+
+#splash img {
+    max-width: 200px;
+    width: 80%; /* Responsive for splash screen */
+}
+
+#tap-to-continue {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* Styling for the main menu */
+#mainMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.menu-option {
+    margin: 20px;
+    text-align: center;
+}
+
+.circular-button {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%; /* Makes the button circular */
+    background-color: #5a2d82;
+    border: 2px solid #1a145e; /* Blue border */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#playingScreen {
+    display: none;
+    text-align: center;
+}
+
+#stopButton {
+    width: 80%;  /* Same as other buttons */
+    max-width: 300px;
+}
+
+/* Styling for the Player Menu */
+#playerMenu button {
+    width: 80%;
+    max-width: 300px;
+}
+
+/* Player Button Fonts */
+.button-text {
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+/* Sleep Screen (Noise Detection) */
+#sleepScreen button {
+    width: 80%;
+    max-width: 300px;
+}
+
+#volumeGauge {
+    width: 80%;
+    max-width: 300px;
+}
+
+#recommendationText {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/* Progress bar styling */
+progress {
+    width: 100%;
+    height: 25px;
+    margin-top: 15px;
+}

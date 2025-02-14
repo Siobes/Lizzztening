@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleep Tracker App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Splash Screen -->
+    <div id="splash" class="menu">
+        <img src="logo.JPG" alt="Logo" class="logo">
+        <p id="tap-to-continue">Tap here to continue</p>
+    </div>
+
+    <!-- Main Menu (Player and Sleep) -->
+    <div id="mainMenu" class="menu" style="display:none;">
+        <button id="playerOption" class="menuButton">
+            <img src="Player.png" alt="Player" class="menuIcon">
+            <p>Player</p>
+        </button>
+        <button id="sleepOption" class="menuButton">
+            <img src="Sleep.png" alt="Sleep" class="menuIcon">
+            <p>Sleep</p>
+        </button>
+    </div>
+
+    <!-- Player Menu -->
+    <div id="playerMenu" class="menu" style="display:none;">
+        <button id="seaWaveButton" class="menuButton">
+            <p>Sea Wave</p>
+        </button>
+        <button id="rainButton" class="menuButton">
+            <p>Rain</p>
+        </button>
+        <button id="windButton" class="menuButton">
+            <p>Wind</p>
+        </button>
+        <button id="WhiteNoiseButton" class="menuButton">
+            <p>White Noise</p>
+        </button>
+        <button id="WhiteNoise2Button" class="menuButton">
+            <p>White Noise 2</p>
+        </button>
+        <button id="backButton" class="menuButton">
+            <p>Back</p>
+    </div>
+
+    <!-- Playing Screen -->
+    <div id="playingScreen" style="display:none;">
+        <p id="playingText">Sound is playing...</p>
+        <button id="stopButton" class="menuButton">
+            <p>Stop</p>
+        </button>
+    </div>
+
+    <!-- Sleep Screen (Noise Detection) -->
+    <div id="sleepScreen" class="menu" style="display:none;">
+        <p id="volumeLevel">Current Volume Level: <span id="volumeValue">0</span>%</p>
+        <progress id="volumeGauge" value="0" max="100"></progress>
+        <p id="noiseCounter">Noise Detection Time: <span id="noiseTime">0</span> seconds</p>
+        <p id="recommendationText"></p>
+        <button id="stopSleepButton">Stop</button>
+        <div id="sleepReport" style="display: none;">
+            <p id="reportText"></p>
+            <button id="backToMainMenuFromSleep">Back to Main Menu</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
